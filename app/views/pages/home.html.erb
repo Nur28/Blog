@@ -1,0 +1,198 @@
+<DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+
+* {
+margin: 0px;
+padding: 0px;
+}
+
+body {
+font-family: calibri, sans-serif;
+}
+
+.header {font-size:100%;
+position:absolute;
+z-index:-1000;
+text-align:center;
+width: 100%;
+min-height: 100%;
+background-color: rgba(0,0,0,0.2);
+}
+
+.header h1 {
+text-align:center;
+font-size: 65px;
+color: white;
+text-transform: uppercase;
+font-weight: 300;
+padding-top: 15%;
+margin-bottom: 10px;
+
+}
+
+.header p {
+text-align: center;
+font-size: 20px;
+letter-spacing: 3px;
+}
+
+
+
+.toggle {
+
+word-spacing: 10px;
+
+}
+
+.nav ul { 
+list-style:none;
+
+}
+
+.nav ul li {
+
+background-color:#221B15;
+border:1px solid white;
+height:35px;
+width:120px;
+text-align:center;
+line-height:35px;
+float:left;
+position:relative;
+border-radius: 8px;
+margin: 2px;
+}
+
+
+.nav ul li a {
+text-decoration:none;
+color: white ;
+display:block;
+}
+
+.nav ul li a:hover {
+background-color: #006D5B;
+border-radius: 8px;
+}
+
+.nav ul ul {
+position:absolute;
+display:none;
+
+}
+
+.nav ul ul li  {
+margin: 0px ;}
+
+
+.nav ul li:hover > ul {
+display:block;
+}
+
+
+
+
+
+
+.footer {
+position:absolute;
+
+color:white;
+left:5px;
+bottom:0px;
+
+  
+}
+
+
+.background-wrap {
+position: fixed;
+z-index: -1000;
+width: 100%;
+height:100%;
+overflow: hidden;
+top: 0px;
+left: 0px;
+bottom: 0px;
+}
+
+#video-bg-elem {
+position: absolute;
+top: 0px;
+left: 0px;
+min-height: 100%;
+min-width: 100%;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+
+
+
+
+
+<div class="background-wrap">
+<video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+<source src="/videos/snow.mp4" type"video/mp4">
+</video>
+
+</div>
+
+
+
+<div class="nav">
+<ul>
+
+<li><a href="#"> Home</a></li>
+<li><a href="#"> Deen </a></li>
+<li><a href="#"> Money </a></li>
+<li><a href="#" class="toggle"> Marriage  &#9663; </a>
+<ul>
+<li><a href="#"> Am i ready?</a> </li>
+<li><a href="#"> Misconceptions</a> </li>
+<li><a href="#"> Tips</a> </li>
+</ul>
+
+
+</li>
+<li><a href="#"> knowledge </a></li>
+
+</ul>
+
+
+</div>
+
+
+
+<div class="header">
+<h1> Welcome to My Website</h1> 
+<p> Still under construction </p>
+</div>
+
+
+
+
+
+<div class="footer">
+ <small> © Copyright 2016, Nur.inc   </small>
+<small><%= link_to "About", about_path %> </small>
+
+</div>
+
+
+
+
+
+
+</body>
+</html >
+
